@@ -1,1 +1,107 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
 
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(90,0,0,0.8)),
+    url('https://wallpapercave.com/wp/wp8476327.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.overlay p {
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 10px 25px;
+    background: crimson;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkred;
+}
+
+/* INTRO */
+.intro {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0a0a0a;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    color: #ccc;
+}
+
+/* ALBUMS */
+.albums {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.album {
+    transition: 0.3s;
+}
+
+.album img {
+    width: 160px;
+    border-radius: 10px;
+}
+
+.album:hover {
+    transform: translateY(-10px);
+}
+
+/* QUOTE */
+.quote {
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+    background: #111;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #666;
+}
