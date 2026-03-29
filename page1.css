@@ -1,177 +1,107 @@
+/* GENERAL */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 1600px;
-    margin: auto;
-}
-
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000;
-    gap: 20px;
-}
-
-.title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: black;
     color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    flex: 1;
 }
 
-.left-img {
-    width: 350px;
-    height: 200px;
-    object-fit: cover;
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.right-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+html {
+    scroll-behavior: smooth;
 }
 
-/* NAVIGATION */
-.nav {
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(90,0,0,0.8)),
+    url('https://wallpapercave.com/wp/wp8476327.jpg') center/cover no-repeat;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 15px;
-    background: #111;
-    font-size: 1.2rem;
+    text-align: center;
 }
 
-.nav a {
+.overlay h1 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.overlay p {
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 10px 25px;
+    background: crimson;
     color: white;
     text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
-/* MEDIA SECTION */
-.media {
+.btn:hover {
+    background: darkred;
+}
+
+/* INTRO */
+.intro {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0a0a0a;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: auto;
+    color: #ccc;
+}
+
+/* ALBUMS */
+.albums {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.album-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
-    align-items: flex-start;
-    flex-wrap: wrap; /* Allows auto-adjust on wide screens */
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.media img {
-    width: 100%;
-    max-width: 600px;
+.album {
+    transition: 0.3s;
+}
+
+.album img {
+    width: 160px;
     border-radius: 10px;
-    object-fit: cover;
 }
 
-video {
-    width: 100%;
-    max-width: 750px;
-    height: auto;
-    border: #f10000 2px solid;
+.album:hover {
+    transform: translateY(-10px);
 }
 
-/* TEXT */
-.text {
-    max-width: 1000px;
-    margin: auto;
-    line-height: 1.6;
-    font-size: 1.1rem;
+/* QUOTE */
+.quote {
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+    background: #111;
 }
 
-/* --------------------------------------- */
-/*           LARGE SCREENS (DESKTOP)       */
-/* --------------------------------------- */
-@media (min-width: 1200px) {
-    .title {
-        font-size: 3rem;
-    }
-    .nav {
-        gap: 150px;
-        font-size: 1.3rem;
-    }
-    body {
-        max-width: 1800px;
-    }
-}
-
-/* --------------------------------------- */
-/*           LAPTOP RESPONSIVE             */
-/* --------------------------------------- */
-@media (max-width: 1024px) {
-    .title {
-        font-size: 2.2rem;
-    }
-    .left-img,
-    .right-img {
-        width: 250px;
-        height: 150px;
-    }
-    .nav {
-        gap: 60px;
-    }
-    video {
-         width: 750px;
-    height: 360px;
-    }
-}
-
-/* --------------------------------------- */
-/*           TABLETS                       */
-/* --------------------------------------- */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .left-img,
-    .right-img {
-        width: 180px;
-        height: 120px;
-    }
-
-    .media {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title {
-        font-size: 1.8rem;
-    }
-
-    .nav {
-        gap: 20px;
-        flex-wrap: wrap;
-        font-size: 1.1rem;
-    }
-}
-
-/* --------------------------------------- */
-/*           SMALL PHONES                  */
-/* --------------------------------------- */
-@media (max-width: 480px) {
-    .left-img,
-    .right-img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    body {
-        padding: 10px;
-    }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #666;
 }
